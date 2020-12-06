@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Page</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
+
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js"
+        integrity="sha512-LGXaggshOkD/at6PFNcp2V2unf9LzFq6LE+sChH7ceMTDP0g2kn6Vxwgg7wkPP7AAtX+lmPqPdxB47A0Nz0cMQ=="
+        crossorigin="anonymous"></script>
+</head>
+
+<body class="m-0 p-0">
+    <div class="body-wrapper w-screen h-screen flex flex-col items-center lg:flex-wrap lg:flex-col bg-gradient-to-t from-blue-500 to-purple-400">
+        <div class="flex flex-col justify-center items-center w-1/2 h-1/2">
+            <div class="flex flex-row items-center font-semibold text-white section-search mt-4 mb-2">
+                <a
+                    href="https://www.google.com/search?q=zaisan&oq=zaisan&aqs=chrome..69i57j0j69i59j46j0l4.3103j0j4&sourceid=chrome&ie=UTF-8">
+                    <h1>Asia/Zaysan</h1>
+                </a>
+                <a id="time" class="text-3xl mx-3" href="https://time.is/ru/Zaysan"></a>
+                <a href="https://darksky.net/forecast/47.4693,84.8718/ca12/en">
+                    <p class="loc text-xl">˚C</p>
+                </a>
+                <canvas id="icon" class="w-40"></canvas>
+            </div>
+            <div class="section-todo">
+                <div class="todo-task-add flex justify-around">
+                    <input
+                        class="td-input pr-80 opacity-70 hover:opacity-100 px-2 py-1 text-black text-xs font-extralight rounded-md shadow-lg"
+                        type="text" placeholder="Добавить Задачу">
+                    <input class="td-add ml-1 opacity-70 hover:opacity-100 px-2 py-1 text-black rounded-md shadow-lg"
+                        type="submit" value="Add">
+                </div>
+                <div class="todo-task-list flex flex-col flex-row text-center text-white">
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center items-center w-1/2 h-1/2">
+
+            <div class="sites text-start text-black bg-white opacity-50 hover:opacity-100 rounded-lg p-2 shadow-lg">
+                <p class="font-bold pl-4 py-0.5 bg-gray-400 rounded-lg">Social</p>
+                <ul class="flex text-center items-center pt-1.5">
+                    <li class="mx-4">
+                        <a href="https://youtube.com/">
+                            <img class="inline m-0 p-0 w-8 h-8"
+                                src="https://www.flaticon.com/svg/static/icons/svg/1384/1384060.svg" alt="yt">
+                            <br>
+                            Youtube</a>
+                    </li>
+                    <li class="mx-4">
+                        <a href="https://vk.com">
+                            <img class="inline w-8 h-8"
+                                src="https://www.flaticon.com/svg/static/icons/svg/2111/2111747.svg" alt="Instagram">
+                            <br>
+                            Vk</a>
+                    </li>
+                    <li class="mx-4">
+                        <a class=" " href="https://www.instagram.com/"><img class="inline w-8 h-8"
+                                src="https://www.flaticon.com/svg/static/icons/svg/2111/2111463.svg" alt="Instagram">
+                            <br>
+                            Instagram</a>
+                    </li>
+                    <li class="mx-4">
+                        <a href="https://edu.enu.kz/">
+                            <img class="inline m-0 p-0 w-8 h-8"
+                                src="https://edu.enu.kz/enu-style/favicons/png/logo_128.png" alt="Platonus">
+                            <br>
+                            Platonus</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="flex justify-center items-center w-1/2 h-1/2">
+
+            <div class="sites text-start text-black bg-white opacity-50 hover:opacity-100 rounded-lg p-2 shadow-lg">
+                <p class="font-bold pl-4 py-0.5 bg-gray-400 rounded-lg">News</p>
+                <ul class="flex text-center items-center pt-1.5">
+                    <li class="mx-4">
+                        <a href="https://trashbox.ru/">
+                            <img class="inline m-0 w-8 h-8" src="https://trashbox.ru/img/logo_trash_stereo_128.png"
+                                alt="trashbox">
+                            <br>
+                            Trashbox</a>
+                    </li>
+                    <li class="mx-4">
+                        <a href="https://habr.com/ru/top/">
+                            <img class="inline m-0 p-0 w-8 h-8"
+                                src="https://www.flaticon.com/premium-icon/icons/svg/3097/3097042.svg" alt="habr">
+                            <br>
+                            Habr</a>
+                    </li>
+                    <li class="mx-4">
+                        <a href="https://tengrinews.kz/world_news/"><img class="inline w-8 h-8"
+                                src="https://is2-ssl.mzstatic.com/image/thumb/Purple124/v4/ad/87/6b/ad876bb3-5789-f756-46be-62c8ae8a680e/AppIcon-1x_U007emarketing-0-7-0-sRGB-85-220.jpeg/230x0w.webp "
+                                alt="tengrinews">
+                            <br>
+                            Tengrinews</a>
+                    </li>
+                    <li class="mx-4">
+                        <a href="https://4pda.ru/">
+                            <img class="inline m-0 p-0 w-8 h-8"
+                                src="https://freesoft.ru/storage/images/207/2068/206776/206776_logo.png" alt="4pda">
+                            <br>
+                            4pda</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="flex justify-center items-center w-1/2 h-1/2">
+
+            <div class="sites text-start text-black bg-white opacity-50 hover:opacity-100 rounded-lg p-2 shadow-lg">
+                <p class="font-bold pl-4 py-0.5 bg-gray-400 rounded-lg">Web</p>
+                <ul class="flex text-center items-center pt-1.5">
+                    <li class="mx-4">
+                        <a href="https://youtube.com/">
+                            <img class="inline m-0 p-0 w-8 h-8"
+                                src="https://www.scottbrady91.com/img/logos/tailwind.png" alt="tailwindcss">
+                            <br>
+                            Tailwind</a>
+                    </li>
+                    <li class="mx-4">
+                        <a href="https://github.com/">
+                            <img class="inline w-8 h-8"
+                                src="https://cdn.iconscout.com/icon/free/png-256/github-153-675523.png" alt="Github">
+                            <br>
+                            Github</a>
+                    </li>
+                    <li class="mx-4">
+                        <a href="https://www.flaticon.com/"><img class="inline w-8 h-8"
+                                src="https://www.flaticon.com/svg/static/icons/svg/1841/1841783.svg" alt="flaticon">
+                            <br>
+                            Flaticon</a>
+                    </li>
+                    <li class="mx-4">
+                        <a href="https://fonts.google.com/">
+                            <img class="inline m-0 p-0 w-8 h-8"
+                                src="https://www.flaticon.com/premium-icon/icons/svg/720/720273.svg" alt="fontsgoogle">
+                            <br>
+                            Fonts</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/skycons.js"></script>
+<script src="/index.js" async></script>
+
+</html>
